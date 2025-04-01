@@ -20,15 +20,15 @@ def find_window(src, tgt):
             add = True
             word += i
             found.append(i)
-            if len(found) == 3:
+            if len(found) == len(tgt):
                 psbl_windows.append(word)
                 add = False
                 word = ''
                 found.clear()
 
-        elif add == True and len(found) != 3:
+        elif add == True and len(found) != len(tgt):
             word+=i
-        elif add == True and len(found) == 3:
+        elif add == True and len(found) == len(tgt):
 
             add = False
             psbl_windows.append(word)
