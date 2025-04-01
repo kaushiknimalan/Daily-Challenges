@@ -50,6 +50,5 @@ for window in windows:
             least_count = len(window)
     count += 1
 
-
 print(f'Smallest part : {windows[count-1]}, Length : {least_count}')
 
